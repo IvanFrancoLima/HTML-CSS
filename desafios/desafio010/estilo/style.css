@@ -96,6 +96,10 @@ main img#bugdroid{
     width: 50%;
 }
 
+main strong{
+    color: var(--cor2);
+}
+
 div#video{
     position: relative;
     background-color: #063d1e;
