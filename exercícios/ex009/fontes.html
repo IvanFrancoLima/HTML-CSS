@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @font-face {
+            font-family: nova;
+            src: url(mídia/Nice\ Sugar.otf);
+        }
+
+        :root{
+            --font1:'Bebas Neue',cursive;
+            --font2: nova;
+        }
+
+        h1{
+            font-family: var(--font1);
+            font-size: 5em;
+        }
+
+        h2{
+            font-family: var(--font2);
+            font-size: 4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título principal</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur numquam molestias veniam fuga deserunt cupiditate, ullam blanditiis totam eum impedit quae, recusandae facilis illum nostrum sit molestiae voluptate eius dolor!</p>
+
+    <h2>Título secundário</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos molestias in, quod error velit eaque iusto amet provident, expedita cupiditate, autem laborum libero impedit sapiente inventore eos totam dolores laudantium.</p>
+</body>
+</html>
