@@ -11,3 +11,63 @@
     margin: 0px;
     padding: 0px;
 }
+
+header{
+    background-color: black;
+    padding: 5.5%;
+}
+
+header>h1{
+    font-size: 8vw;
+    color: white;
+    font-family: var(--fontettitulo);
+    text-align: center;
+}
+
+header>p{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+
+section{
+    margin: 20px 0px;
+    height: 800px;
+}
+
+section p{
+    font-family: var(--fontetexto);
+    font-size: 1.5em;
+}
+
+section#imagem{
+    background:  url(../imagens/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
+    color: white;
+}
+
+section#imagem2{ 
+    background: url(../imagens/background002.jpg) right center no-repeat fixed;
+    background-size: cover;
+    color: white;
+}
+
+footer{
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
