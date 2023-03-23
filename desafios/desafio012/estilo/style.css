@@ -12,3 +12,79 @@
     padding: 0px;
 }
 
+html,body{
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    color: white; 
+}
+
+header h1{
+    font-family: var(--fontettitulo);
+    font-size: 20vh;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p{
+    padding-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 2.5vh;
+}
+
+header a,footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover,footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 6em;
+}
+
+section p{
+    padding-left: 5vh;
+    font-family: var(--fontetexto);
+    font-size: 3em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.267);
+    width: 600px;
+    color: white;
+}
+
+section#joaninha{
+    background: url(../imagens/background001.jpg) center right no-repeat fixed;
+    background-size: cover;
+}
+
+section#livro{
+    background: url(../imagens/background002.jpg) center right no-repeat fixed;
+    background-size: cover;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    font-size: 1.em;
+}
