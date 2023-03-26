@@ -128,7 +128,7 @@ div#video>iframe{
 main>article>aside{
     background-color: var(--cor6);
     margin:10px 0px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
 main>article>aside>h3{
