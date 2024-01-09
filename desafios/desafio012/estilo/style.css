@@ -1,50 +1,47 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
-    --fontettitulo:'Passion One', cursive;
-    --fontetexto:'Sriracha', cursive;
+    --fonte_header:'Passion One',Arial, sans-serif;
+    --font_cordel:'Sriracha', cursive;
 }
 
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-html,body{
-    min-height: 100vh;
+body{
+    height: 100vh;
 }
 
 header{
     background-color: black;
+    color: white;
+    padding: 50px;
+    
+}
+
+header>h1{
+    font-variant: small-caps;
     text-align: center;
-    color: white; 
+    font: normal normal 10vw  var(--fonte_header);
 }
 
-header h1{
-    font-family: var(--fontettitulo);
-    font-size: 10vw;
-    padding-top: 50px;
-    font-variant: small-caps;
-    text-shadow: 1px 1px 2px rgb(167, 144, 144);
-}
-
-header p{
-    padding-bottom: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-variant: small-caps;
-    font-weight: lighter;
+header>p{
+    text-align: center;
     font-size: 2.5vh;
 }
 
-header a,footer a{
+header a, footer a{
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-header a:hover,footer a:hover{
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
@@ -52,43 +49,32 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
 }
 
 section p{
-    font-family: var(--fontetexto);
-    font-size: 4vw;
-    margin-bottom: 1em;
+    padding-top: 1em;
+    font: normal lighter 4vw var(--font_cordel);
 }
 
-section.normal{
-    background-color: white;
-    color: black;
-}
 
-section.imagem{
-    box-shadow:  inset 6px 6px 13px 0px rgba(0, 0, 0, 0.507);
-}
-
-section.imagem p{
-    background-color: rgba(0, 0, 0, 0.267);
+section.images>p{
+    background-color: rgba(0, 0, 0, 0.329);
     display: inline-block;
     color: white;
 }
 
-section#joaninha{
-    background: url(../imagens/background001.jpg) center right no-repeat fixed;
-    background-size: cover;
+#joaninha{
+    background: black url(../imagens/background001.jpg) no-repeat center/cover fixed;
 }
 
-section#livro{
-    background: url(../imagens/background002.jpg) center right no-repeat fixed;
-    background-size: cover;
+#livro{
+    background: black url(../imagens/background002.jpg) no-repeat center/cover fixed;
 }
 
 footer{
-    color: white;
-    text-align: center;
-    padding: 10px;
+    padding: 1em;
     background-color: black;
-    font-size: 1em;
+    text-align: center;
+    color: white;
 }
