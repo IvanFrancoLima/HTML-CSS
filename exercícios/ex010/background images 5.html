@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #fora{
+            height: 100vh;
+            background-color: rgb(165, 100, 226);
+            position: relative;
+        }
+
+        #dentro{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);;
+          
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fora">
+        <div id="dentro">
+
+        </div>
+    </div>
+</body>
+</html>
