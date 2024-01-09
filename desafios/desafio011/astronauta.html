@@ -10,27 +10,24 @@
             margin: 0px;
             padding: 0px;
         }
+
         body{
-            position: relative;
-            background: black url(mídia/espaco.jpg) center center no-repeat fixed;
-            background-size: cover;
+            background: black url(mídia/espaco.jpg) no-repeat center/cover fixed;
+            height: 100vh;
         }
 
-        div{
+        img{
+            display: block;
+            width: 300px;
             position: absolute;
-            width: 600px;
-            height: 400px;
-            background: url(mídia/astronauta.png) no-repeat;
-            background-size: contain;
             top: 50%;
             left: 50%;
-            transform: translate(-35%,30%);
-
+            transform: translate(-50%, -50%);
         }
+        
     </style>
 </head>
 <body>
-    <div>
-    </div>
+    <img src="mídia/astronauta.png" alt="astronauta">
 </body>
 </html>
