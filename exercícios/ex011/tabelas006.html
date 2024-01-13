@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes</title>
+    <style>
+        table{
+            width: 600px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+
+        tr>td, th{
+            border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <td>Carla Silva</td>
+                <td>Homem de Ferro</td>
+                <td>Carga Explosiva</td>
+                <td>Sempre ao seu Lado</td>
+            </tr>
+
+            <tr>
+                <td>Lara Souza</td>
+                <td>Inception</td>
+                <td>O Chamado</td>
+                <td>The Jew</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Ivan de Jesus</td>
+                <td>Sempre ao Seu Lado</td>
+                <td>Gigantes de Aço</td>
+                <td>Os Incríveis</td>
+            </tr>
+
+            <tr>
+                <td>Lucas Silva</td>
+                <td>Thor</td>
+                <td>Olhe para Cima</td>
+                <td>Friday 13</td>
+            </tr>
+
+            <tr>
+                <td>Óliver de Souza</td>
+                <td>Vingadores</td>
+                <td>Homem-Aranha</td>
+                <td>Homem-Formiga</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
