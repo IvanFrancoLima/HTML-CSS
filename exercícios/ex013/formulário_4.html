@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço</title>
+</head>
+<body>
+    <form action="preco.php" method="get" oninput="total.value = Number(quantidade.value) * Number(preco.value)">
+        <p>
+            <label for="produto">Produto:</label>
+            <input type="text" name="produto_" id="produto">
+        </p>
+        <p>
+            <label for="preco">Valor</label>
+            <input type="number" name="preco_" id="preco">
+        </p>
+        <p>
+            <label for="quantidade">Quantidade</label>
+            <input type="number" name="quantidade_" id="quantidade">
+        </p>
+        <p>
+            <label for="total">Total da Compra </label>
+            <output name="total_" id="total">0</output>
+        </p>
+        <input type="submit">
+    </form>
+</body>
+</html>
