@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais formulários</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Modelo de Celular</h1>
+
+    <form action="modelo.php">
+        <p>
+            <label for="modelo">Modelo do Celular</label>
+            <select name="modelo_" id="modelo">
+                <option value="">Escolha...</option>
+                <optgroup label="Apple">
+                    <option value="APII132">iphone 11 32gb</option>
+                    <option value="APII133">iphone 11 Pro 64gb</option>
+                    <option value="APII134">iphone 12 Pro Max 128gb</option>
+                </optgroup>
+
+                <optgroup label="Sansung">
+                    <option value="Android111">Sansung Galax A10</option>
+                    <option value="Android112">Sansung Galax A14</option>
+                    <option value="Android113">Sansung Galax A20</option>
+                </optgroup>
+
+                <optgroup label="Xiaomi">
+                    <option value="China1245">Redmi Note 10 64gb</option>
+                    <option value="China1255">Redmi Note 15 128gb</option>
+                    <option value="China1265">Redmi Note 18 256gb</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="especificacoes"></label>
+            <textarea name="especificacoes_" id="especificacoes" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <label for="profissao">Profissão</label>
+            <input type="text" id="profissao" name="profissao_" list="profs">
+            <datalist id="profs">
+                <optgroup label="Negócios">
+                    <option value="Administrador"></option>
+                    <option value="Contador"></option>
+                    <option value="Gerente de Projetos"></option>
+                    <option value="Micro-empreendedor"></option>
+                </optgroup>
+
+                <optgroup label="Informática">
+                    <option value="Desenvolvedor Web"></option>
+                    <option value="Técnico em Hardware"></option>
+                    <option value="Analista de Dados"></option>
+                </optgroup>
+
+                <optgroup label="Ciências Humanas">
+                    <option value="Professor"></option>
+                    <option value="Redator"></option>
+                    <option value="Jornalista"></option>
+                </optgroup>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="telefone">Número de Telefone:</label>
+            <input type="tel" id="telefone" name="telefone_" placeholder="(XX) XXXX-XXXX" pattern="">
+        </p>
+
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+</body>
+</html>

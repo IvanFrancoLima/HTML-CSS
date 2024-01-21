@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Inicial</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Digite suas informações</h1>
+
+    <form action="cadastro.php" method="get">
+        <label for="campo_nome">Nome</label>
+        <input type="text" name="fnome" id="campo_nome">
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+
+    <!-- As propiedades "Action" e "Method" indicam respectivamente para aonde os dados
+    dos formulário seram enviados para serem tratados e o outro indica o método de trans
+    missão que será usado para esses dados-->
+
+    <!--Existem duas opções para a propiedade method que são "GET" e "POST"
+    Uma característica que diferencia os dois é que formulários com o método
+    "GET" deixam os dados inseridos no formulário aparecerem na URL do site
+    exemplo disso é própio campo de pesquisa do Google Chrome já o metódo
+    "POST" faz com que os dados inseridos façam parte do protocolo HTTP e
+    não sejam exibidios na URL-->
+
+    <!--Utilizar método "GET" quando:
+    1 - Os dados do formulário não sejam sensíveis ao usuário, tipo senhas endereços e etc;
+    2 - Se os dados do formulário não passarem de 3.000 bytes;
+    3 - Se o formulário for simples e de facil compartilhamento;
+    4 - Não contenha PDF, imagens e outro tipo de dado sem ser string.-->
+
+    <!--Utilizar método "POST" quando
+    1 - Quando os dados forém sensíveis e não queremos que apareça na URL
+    2 - Quando o peso dos dados ultrapassa os 3.000 bytes
+    3 - Quando o formulário vai conter imagens,pdfs e outros tipos de arquivos
+    --->
+
+    <!-- A tag Label serve para entiquetar e se relacionar semânticamente com o input do tipo
+    text e para isso a propiedade "for" precisa ser igual ao "id" da tag input que o label es
+    teja se relacionando -->
+
+    <!--A propiedade "NAME" vai indentificar o tipo de dado quando ele for enviado pelo formulário para que o progamador back-end trate ele no "cadastro.php"-->
+
+    <!--A propiedade "Id" pode ser usada para identificar e tratar e corrigir esses dados com Java-Script antes de enviá-lo para o servidor. -->
+</body>
+</html>

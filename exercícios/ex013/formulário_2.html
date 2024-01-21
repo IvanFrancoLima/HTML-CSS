@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digite seus Dados</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Digite suas informações</h1>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="campo_nome">Nome</label>
+            <input type="text" name="fnome" id="campo_nome">
+        </p>
+
+        <p>
+            <label for="foto_de_perfil">Foto do Perfil</label>
+            <input type="file" name="foto_perfil" id="foto_de_perfil" accept="images/*">
+        </p>
+
+        <p>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade_" id="idade" min="18" max="130">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone_" placeholder="(XX) XXXX-XXXX">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email_" size="30" maxlength="50">
+        </p>
+
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha_" minlength="5" maxlength="18">
+        </p>
+
+        <p>
+            <label for="mes_aniversario">Mês de aniversário:</label>
+            <input type="month" id="mes_aniversario" name="mes_aniversario_">
+        </p>
+
+        <p>
+            <label for="dia_compra">Dia da compra:</label>
+            <input type="date" id="dia_compra" name="dia_compra_">
+        </p>
+
+        <p>
+            <label for="hora_compra">Hora da compra:</label>
+            <input type="time" id="hora_compra" name="hora_compra_">
+        </p>
+
+        <p>
+            <label for="cor">Cor</label>
+            <input type="color" id="cor" name="cor_">
+        </p>
+
+        <p>
+            <label for="nota">Nível de sastifação</label>
+            <input type="range" id="nota" name="nota_" min="0" max="6" value="3">
+        </p>
+
+        <p>
+            <input type="checkbox" id="termos" name="termos_">
+            <label for="termos">Aceito os <a href="#">termos de uso</a></label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="concorda" name="concorda_">
+            <label for="concorda">Concorda em receber atualizações no seu Email</a></label>
+        </p>
+
+        <p>
+            <fieldset style="width: 100px;">
+                <legend>Sexo</legend>
+                <input type="radio" id="sex_mascu" name="sex_" checked>
+                <label for="sex_mascu">Masculino</label>
+                <input type="radio" id="sex_fem" name="sex_">
+                <label for="sex_fem">Feminino</label>
+            </fieldset>
+        </p>
+
+        <p>
+            <input type="submit">
+            <input type="reset" value="Limpar Tudo">
+        </p>
+    </form>
+</body>
+</html>
