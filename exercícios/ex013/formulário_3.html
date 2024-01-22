@@ -65,7 +65,10 @@
 
         <p>
             <label for="telefone">Número de Telefone:</label>
-            <input type="tel" id="telefone" name="telefone_" placeholder="(XX) XXXX-XXXX">
+            <input type="tel" id="telefone" name="telefone_" placeholder="(XX) XXXX-XXXX" 
+            pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" required>
+
+            <!--Estudar mais sobre Regex = Regular Expressions-->
         </p>
 
         <p>

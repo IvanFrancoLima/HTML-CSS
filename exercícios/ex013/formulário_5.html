@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pessoal</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: bisque;
+        }
+
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            max-width: 800px;
+            min-width: 350px;
+            width: 100%;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.315);
+            background-color: white;
+        }
+
+        main h1{
+            margin-bottom: 1em;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        main p{
+            margin: 1em 0px;
+        }
+
+        main input.genero{
+            margin: 1em 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Formulário de Cadastro</h1>
+        <form action="cadastro.php" method="post">
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome_" placeholder="Digite seu nome" required>
+            </p>
+
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="nome_" placeholder="Digite sua senha" minlength="8" maxlength="15">
+            </p>
+
+            <p>
+                <label for="profissao">Curso</label>
+                <select name="profissao_" id="profissao">
+                   <option value="">Escolha seu curso</option>
+                   <optgroup label="T.I">
+                        <option value="ADS">Analise e Desenvolvimento de Sistema</option>
+                        <option value="CDC">Ciências da Computação</option>
+                        <option value="REDES">Redes de Computadores</option>
+                   </optgroup>
+
+                   <optgroup label="Humanas">
+                        <option value="LINGUAS">Letras</option>
+                        <option value="ARTES">Artes Cênicas</option>
+                        <option value="RH">Recursos Humanos</OPtion>
+                   </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <fieldset style="width: 350px;">
+                    <legend style="text-align: center;">Escolha seu gênero</legend>
+                    <input type="radio" id="masculino" name="genero" class="genero">
+                    <label for="masculino">Masculino</label>
+
+                    <br>
+
+                    <input type="radio" id="feminino" name="genero" class="genero">
+                    <label for="feminino">Feminino</label>
+                </fieldset>
+            </p>
+        </form>
+
+        <p>
+            <label for="opiniao">Digite suas expectativas:</label> <br>
+            <textarea name="opiniao_" id="opiniao" cols="30" rows="10"></textarea>
+        </p>
+
+        <input type="submit">
+        <input type="reset" value="Limpar">
+    </main>
+    <!--Estudar mais sobre Regex = Regular Expressions-->
+</body>
+</html>
