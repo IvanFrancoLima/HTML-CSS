@@ -17,6 +17,9 @@ body{
 }
 
 @media screen and (min-width:1500px) {
+    body{
+        background: black url(../imagens/back-tv.jpg) no-repeat center/cover fixed;
+    }
     #tablet{ display: none;}
     #tv{display: block;}
 }

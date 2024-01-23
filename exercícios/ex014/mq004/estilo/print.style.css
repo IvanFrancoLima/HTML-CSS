@@ -1,4 +1,10 @@
 @charset "UTF-8";
 
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    color: black;
+}
+
 #phone{display: none;}
 #print{ display: block;}
