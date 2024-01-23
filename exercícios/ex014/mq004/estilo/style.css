@@ -7,12 +7,17 @@ body{
 #tablet{ display: block;}
 #phone{ display: none;}
 
-@media screen and (min-width:1050px) {
+@media screen and (min-width:1000px) {
     body{
         background: black url(../imagens/back-pc.jpg) no-repeat center/cover fixed;
     }
     #pcicone{display: block;}
     #tablet{ display: none;}
     #phone{ display: none;}
+}
+
+@media screen and (min-width:1500px) {
+    #tablet{ display: none;}
+    #tv{display: block;}
 }
 
