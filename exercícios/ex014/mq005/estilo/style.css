@@ -20,6 +20,36 @@ header h1{
     
 }
 
+@media screen and (min-width:780px) {
+    menu#caminhos{
+        display: block;
+    }
+
+    span#menu{
+        display: none;
+    }  
+
+    menu#caminhos{
+        margin-left: 1em;
+        text-align: left;
+        background-color: #939493;
+    }
+
+    menu>ul>li{
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+    menu#caminhos a{
+        font-size: 20px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    main{
+        max-width: 780px;
+    }
+}
+
 #menu{
     padding: 1em;
     display: block;
@@ -39,7 +69,6 @@ menu{
 
 menu>ul>li{
     list-style-type: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.178);
     
 }
 
@@ -56,6 +85,7 @@ menu a:hover{
     background-color: rgba(255, 255, 255, 0.075);
     border-radius: 5px;
     color: #d0d8d0;
+    transition: 0.5s;
 }
 
 main{
