@@ -1,0 +1,34 @@
+@media screen and (min-width:768px) {
+    section#login{
+        width: 700px;
+        height: 500px;
+    }
+
+    div#imagem{
+        float: left;
+        height: 100%;
+        width: 250px;
+    }
+
+    div#formulario>h1{
+        font-size: 2em;
+    }
+
+    div#formulario>p{
+        font-size:1.2em;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    section#login{
+        width: 952px;
+        height: 80%;
+    }
+
+    div#imagem{
+        float: right;
+        height: 100%;
+        width: 50%;
+    }
+}
