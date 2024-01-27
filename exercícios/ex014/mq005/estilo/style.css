@@ -50,6 +50,10 @@ header h1{
     }
 }
 
+a::after{
+    content: '\1F600';
+}
+
 #menu{
     padding: 1em;
     display: block;
