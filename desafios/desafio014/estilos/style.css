@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+:root{
+    --cor1:#011C40;
+    --cor2:#011126;
+    --cor3:#032859;
+    --cor4:#074973;
+    --cor5:#08678C;
+    --cor_botao:#0c8ec2;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -10,7 +19,7 @@ body{
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom,#011C40,#011126,#032859,#074973,#08678C);
+    background-image: linear-gradient(to bottom,var(--cor1),var(--cor2),var(--cor3),var(--cor4),var(--cor5));
 }
 
 main{
@@ -29,6 +38,7 @@ section#login{
     background-color: rgb(255, 254, 254);
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.637);
+    overflow: hidden;
 }
 
 div#imagem{
@@ -37,7 +47,78 @@ div#imagem{
 }
 
 div#formulario{
-    display: block;
-    padding: 5px;
+    padding: 0.5em;
 }
 
+div#formulario h1{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.301);
+    text-align: center;
+}
+
+div#formulario p{
+    text-align: justify;
+    text-indent: 5px;
+}
+
+div#formulario input[type=submit]{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor_botao);
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+div#formulario input[type=submit]:hover{
+    background-color:#0c8ec263;
+    color: black;
+    transition: 0.2s;
+}
+
+.material-icons{
+    font-size: 40px;
+    padding: 8px;
+    color: white;
+}
+
+.campos{
+    margin: 1em 0px;
+    height: 40px;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: var(--cor3);
+}
+
+.campos input{
+    width: calc(100% - 49px);
+    height: 30px;
+    transform: translateY(-7px);
+}
+
+div#formulario label{
+    display: none;
+}
+
+#botao{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--cor_botao);
+    border-radius: 5px;
+    background-color: #08678cad;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+#botao:hover{
+    background-color: #0c8ec263;
+}

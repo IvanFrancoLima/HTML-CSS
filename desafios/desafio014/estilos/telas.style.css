@@ -13,6 +13,7 @@
     section#login>div#formulario{
         float: right;
         width: 70%;
+        padding: 0px;
     }
 }
 
@@ -30,5 +31,6 @@
     section#login>div#formulario{
         float: left;
         width: 50%;
+        padding: 0px;
     }
 }
