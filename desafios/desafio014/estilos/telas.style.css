@@ -15,6 +15,38 @@
         width: 70%;
         padding: 0px;
     }
+
+    div#formulario h1{
+        font-size: 1.8em;
+        padding: 2em 1em 1em 1em;
+    }
+
+    div#formulario p{
+        font-size: 1.2em;
+        text-indent: 1em;
+        padding: 1em;
+    }
+
+    .campos{
+        margin: 1em auto;
+        width: 97%;
+    }
+
+    .campos input{
+        width: calc(100% - 51px);
+        height: 30px;
+        transform: translateY(-7px);
+    }
+
+    div#formulario input[type=submit]{
+        margin: 1em auto;
+        width: 97%;
+    }
+
+    #botao{
+        margin: 1em auto;
+        width: 97%;
+    }
 }
 
 @media screen and (min-width:1000px) {

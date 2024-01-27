@@ -60,25 +60,6 @@ div#formulario p{
     text-indent: 5px;
 }
 
-div#formulario input[type=submit]{
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--cor_botao);
-    color: white;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-div#formulario input[type=submit]:hover{
-    background-color:#0c8ec263;
-    color: black;
-    transition: 0.2s;
-}
-
 .material-icons{
     font-size: 40px;
     padding: 8px;
@@ -102,6 +83,25 @@ div#formulario input[type=submit]:hover{
 
 div#formulario label{
     display: none;
+}
+
+div#formulario input[type=submit]{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor_botao);
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+div#formulario input[type=submit]:hover{
+    background-color:#0c8ec263;
+    color: black;
+    transition: 0.2s;
 }
 
 #botao{
