@@ -29,7 +29,6 @@ section#login{
     background-color: rgb(255, 254, 254);
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.637);
-    overflow: hidden;
 }
 
 div#imagem{
@@ -42,16 +41,3 @@ div#formulario{
     padding: 5px;
 }
 
-div#formulario h1{
-    text-align: center;
-}
-
-div#formulario p{
-    font-size: 0.8em;
-    text-indent: 5px;
-    text-align: justify;
-}
-
-form{
-
-}

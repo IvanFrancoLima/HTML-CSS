@@ -1,34 +1,34 @@
-@media screen and (min-width:768px) {
+@charset "UTF-8";
+@media screen and (min-width:768px) and (max-width:1000px) {
     section#login{
-        width: 700px;
-        height: 500px;
+        width: 80vw;
     }
 
-    div#imagem{
+    section#login>div#imagem{
         float: left;
         height: 100%;
-        width: 250px;
+        width: 30%;
     }
 
-    div#formulario>h1{
-        font-size: 2em;
-    }
-
-    div#formulario>p{
-        font-size:1.2em;
-        padding: 10px 0px;
+    section#login>div#formulario{
+        float: right;
+        width: 70%;
     }
 }
 
 @media screen and (min-width:1000px) {
     section#login{
-        width: 952px;
-        height: 80%;
+        width: 950px;
     }
 
-    div#imagem{
+    section#login>div#imagem{
         float: right;
         height: 100%;
+        width: 50%;
+    }
+
+    section#login>div#formulario{
+        float: left;
         width: 50%;
     }
 }
