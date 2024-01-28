@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex; /*Deixas os itens lado a lado */
+
+    justify-content: space-between; /*Define o espaçamento entre os itens ou seu posicionamento */
+
+    align-items: center; /*Alinha os conteúdos ao centro*/
+
+    flex-wrap: wrap; /*Se a tela ficar muito pequena os itens vão quebrar e ficar 1 abaixo do outro*/
+
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+}
+
+header>a{
+    color: white;
+    text-decoration: none;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header li>a{
+    padding: 10px;
+    margin-left: 20px;
+    background: tomato;
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+}
+
+.flex>div{
+    flex: 1 1 200px; /* 1 para ele se expandir e o outro 1 para ele encolher e 200px é o tamanho mínimo da imagem se diminiur além disso ela quebra para baixo "se tiver o flex-wrap no contâiner pai"*/
+
+    margin: 10px;
+}
