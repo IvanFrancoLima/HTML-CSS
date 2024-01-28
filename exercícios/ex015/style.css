@@ -7,12 +7,10 @@
 
 header{
     display: flex; /*Deixas os itens lado a lado */
-
+    
     justify-content: space-between; /*Define o espaçamento entre os itens ou seu posicionamento */
 
     align-items: center; /*Alinha os conteúdos ao centro*/
-
-    flex-wrap: wrap; /*Se a tela ficar muito pequena os itens vão quebrar e ficar 1 abaixo do outro*/
 
     padding: 20px;
     background-color: black;
