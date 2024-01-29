@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main{
+            display: flex;
+
+            /*flex-wrap: wrap;
+            flex-direction: column;*/
+
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            max-width: 800px;
+            height: 400px;
+            margin: auto;
+        }
+
+        div{
+            text-align: center;
+            line-height: 100px;
+            background-color: #f1f1f1;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            font-size: 30px;   
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="quadrado">1</div>
+        <div class="quadrado">2</div>
+        <div class="quadrado">3</div>
+    </main>
+</body>
+</html>
