@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            padding: 3em;
+            background-color: greenyellow;
+            color: white;
+            text-align: center;
+        }
+
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            background-color: gray;
+        }
+
+        nav a{
+            width: 100%;
+            text-align: center;
+            padding: 1em;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover{
+            background-color: rgba(255, 255, 255, 0.267);
+        }
+
+        aside{
+            padding: 1em;
+            background-color: #E7E9EB;
+        }
+
+        h1,h2,p,div{
+            margin-bottom: 20px;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        div{
+            padding: 1em;
+            color: black;
+            background-color: gray;
+        }
+
+        .quadrado{
+            height: 150px;
+        }
+
+        #retangulo{
+            height: 200px;
+        }
+
+        article{
+            padding: 1em;
+        }
+
+        
+
+        @media screen and (min-width:800px) {
+        nav{
+            display: block;
+            background-color: gray;
+            padding: 2em;
+        }
+
+        nav a{
+            padding: 1.2em;
+            margin-left: 10px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover{
+            background-color: rgba(255, 255, 255, 0.267);
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <p>With a flexible layout</p>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <main>
+        <aside>
+            <h1>About Me</h1>
+            <p>photo of me:</p>
+            <div class="quadrado">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+
+            <h2>More Text</h2>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div>Image</div>
+            <div>Image</div>
+            <div>Image</div>
+        </aside>
+
+        <article>
+            <h1>Title Heading</h1>
+            <p>Title description, Dec 7, 2017</p>
+            <div class="quadrado" id="retangulo">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+            <h1>Title Heading</h1>
+            <p>Title description, Dec 7, 2017</p>
+            <div class="quadrado" id="retangulo">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </article>
+    </main>
+</body>
+</html>
