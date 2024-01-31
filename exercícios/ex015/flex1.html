@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocupando 50%</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div{
+        background-color: gray;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        height: 100px;
+    }
+
+    #um{
+        flex: 50%;
+        background-color: aqua;
+    }
+
+    #dois{
+        flex: 50%;
+    }
+
+    @media screen and (max-width:800px) {
+        #um, #dois{
+            flex: 100%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <div id="um">1</div>
+        <div id="dois">2</div>
+    </header>
+</body>
+</html>
