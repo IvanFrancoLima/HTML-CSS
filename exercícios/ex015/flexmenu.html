@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsivo</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body{
+            background-color: greenyellow;
+        }
+
+        header{
+            background-color: gray;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
+
+        nav{
+            background-color: gray;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: column;
+        }
+
+        nav a{
+            width: 100%;
+            padding: 1em;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+        }
+
+        nav a:hover{
+            background-color: rgba(255, 255, 255, 0.164);
+        }
+
+        main{
+            background-color: white;
+            padding: 1em;
+        }
+
+        main h1{
+            text-align: center;
+            padding: 10px;
+        }
+
+        main p{
+            line-height: 1.2em;
+            text-align: justify;
+        }
+
+        @media screen and (min-width: 450px) {
+            nav{
+                flex-direction: row;
+            }
+        }
+
+        @media screen and (min-width:1000px) {
+            main{
+                margin: auto;
+                width: 800px;
+                border-radius: 0px 0px 8px 8px;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.089);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Site</h1>
+    </header>
+    <nav>
+        <a href="#">Menu</a>
+        <a href="#">Notícias</a>
+        <a href="#">Sobre</a>
+        <a href="#">Redes</a>
+    </nav>
+
+    <main>
+        <article>
+            <h1>My Artcile</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, libero non quia porro necessitatibus ex, numquam asperiores alias quidem minus impedit tempora voluptatum quam voluptatem perspiciatis tenetur voluptas officiis nostrum?
+            Accusamus nobis fugiat deleniti aliquam eius consequuntur neque officia accusantium quibusdam necessitatibus, similique consequatur vitae, possimus enim! Eos sed fugiat numquam facere asperiores et quia quasi facilis quo odio? Maiores.
+            Consequatur quos alias fuga impedit vitae. Quis ullam illum nobis, nostrum facilis itaque sit ipsam quisquam inventore impedit, animi ipsum error expedita, nihil aliquid! Modi omnis porro odio aperiam nesciunt.
+            Repudiandae aut nihil rerum sit nisi. Natus nemo deleniti velit reiciendis molestias minima quam accusamus, vero aperiam quis! Nisi iste nam libero accusamus suscipit perspiciatis quia reprehenderit quis ex nostrum.
+            Excepturi esse beatae dicta voluptatibus sapiente dolores placeat reiciendis facilis. Sunt, aperiam. Commodi nemo deserunt soluta id aliquid pariatur, tempora harum voluptatibus earum? Aut, voluptate cum? Molestias velit voluptate vero.</p>
+        </article>
+    </main>
+</body>
+</html>
