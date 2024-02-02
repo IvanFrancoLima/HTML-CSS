@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocupando 50%</title>
-</head>
-<style>
-    *{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-
-    header{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    div{
-        background-color: gray;
-        color: white;
-        text-align: center;
-        line-height: 100px;
-        height: 100px;
-    }
-
-    #um{
-        flex: 50%;
-        background-color: aqua;
-    }
-
-    #dois{
-        flex: 50%;
-    }
-
-    @media screen and (max-width:800px) {
-        #um, #dois{
-            flex: 100%;
+    <title>FlexBox</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-    }
-</style>
+        
+        .pai{
+            display: flex;
+            /*flex-direction: row;
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+            justify-content: center; /*eixo principal*/
+            align-items: center; /*eixo transversal*/
+            align-content: flex-end;
+            gap: 10px;
+            background-color: yellow;
+            height: 50vh;
+        }
+
+        .filhos{
+            flex-shrink: 0;
+            font-size: 1.5em;
+            text-align: center;
+            background-color: yellowgreen;
+            width: 400px;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <div id="um">1</div>
-        <div id="dois">2</div>
-    </header>
+    <div class="pai">
+        <div class="filhos">Item 1</div>
+        <div class="filhos">Item 2</div>
+        <div class="filhos">Item 3</div>
+        <div class="filhos">Item 4</div>
+        <div class="filhos">Item 5</div>
+        <div class="filhos">Item 6</div>
+        <div class="filhos">Item 7</div>
+        <div class="filhos">Item 8</div>
+    </div>
 </body>
 </html>
