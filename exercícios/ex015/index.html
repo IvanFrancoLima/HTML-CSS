@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 1000px;
+        }
+
+        main>img{
+            margin:  0 0.5% 0.5% 0;
+            width: 24%;
+            height: 100%;
+        }
+
+        #maior{
+            float: left;
+            width: 49%;
+        } 
+    </style>
 </head>
 <body>
-    
+    <main>
+        <img src="imagens/cinqueterre.jpg" id="maior">
+        <img src="imagens/paris.jpg">
+        <img src="imagens/pisa.jpg">
+        <img src="imagens/sanfran.jpg">
+        <img src="imagens/newyork.jpg">
+    </main>
 </body>
 </html>
